@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +8,12 @@
 
     <style>
 
-        /* =========================
-           ESTILO GENERAL
-           ========================= */
-
         body {
             background-color: #f4f1de;
             color: #333333;
             font-family: Arial, sans-serif;
             margin: 0;
         }
-
-
-        /* =========================
-           ENCABEZADO
-           ========================= */
 
         header {
             background-color: #264653;
@@ -36,11 +26,6 @@
             font-size: 40px;
         }
 
-
-        /* =========================
-           SECCIONES
-           ========================= */
-
         section {
             padding: 20px;
         }
@@ -52,21 +37,14 @@
             border-radius: 10px;
         }
 
-
-        /* =========================
-           PROPIEDADES DE TEXTO
-           ========================= */
-
-        p {
-            text-align: justify;
-            line-height: 1.8;
-            word-spacing: 4px;
+        aside {
+            background-color: #e9c46a;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
         }
 
-        h2 {
-            text-align: center;
-            text-decoration: underline;
-        }
+        /* CLASES DE LA SEMANA 2 */
 
         .texto-grande {
             font-size: 20px;
@@ -74,24 +52,16 @@
 
         .destacado {
             font-size: 22px;
-            font-weight: bold;
-            text-align: center;
-            text-shadow: 2px 2px 3px #000000;
         }
 
         .temas {
             font-size: 18px;
-            line-height: 2;
         }
 
-
-        /* =========================
-           IDS
-           ========================= */
+        /* IDS DE LA SEMANA 2 */
 
         #titulo-odisea {
             font-family: Georgia, serif;
-            letter-spacing: 3px;
         }
 
         #descripcion {
@@ -102,11 +72,6 @@
             font-family: "Courier New", monospace;
         }
 
-
-        /* =========================
-           IMAGEN
-           ========================= */
-
         img {
             width: 300px;
             display: block;
@@ -115,9 +80,42 @@
         }
 
 
-        /* =========================
+        /* =================================
+           AGREGADO DE SEMANA 3
+           PROPIEDADES DE TEXTO
+           ================================= */
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            word-spacing: 3px;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .destacado {
+            text-shadow: 2px 2px 3px #555555;
+        }
+
+
+        /* =================================
+           AGREGADO DE SEMANA 3
+           VÍNCULOS
+           ================================= */
+
+        a {
+            color: #1d5d8f;
+            text-decoration: underline;
+        }
+
+
+        /* =================================
+           AGREGADO DE SEMANA 3
            TABLA
-           ========================= */
+           ================================= */
 
         table {
             width: 100%;
@@ -128,57 +126,20 @@
         th {
             background-color: #264653;
             color: white;
-            padding: 15px;
+            padding: 12px;
             text-align: center;
-            font-size: 18px;
         }
 
         td {
-            border: 2px solid #264653;
-            padding: 12px;
+            border: 1px solid #264653;
+            padding: 10px;
             text-align: center;
-            line-height: 1.5;
         }
 
         tr:nth-child(even) {
-            background-color: #e9f5f2;
+            background-color: #f4f1de;
         }
 
-        tr:hover {
-            background-color: #f1d48a;
-        }
-
-
-        /* =========================
-           VÍNCULOS
-           ========================= */
-
-        a {
-            color: #1d5d8f;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-shadow: 1px 1px 2px gray;
-        }
-
-
-        /* =========================
-           ASIDE
-           ========================= */
-
-        aside {
-            background-color: #e9c46a;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-        }
-
-
-        /* =========================
-           PIE DE PÁGINA
-           ========================= */
 
         footer {
             background-color: #264653;
@@ -191,10 +152,7 @@
     </style>
 </head>
 
-
 <body>
-
-    <!-- ENCABEZADO -->
 
     <header>
 
@@ -209,12 +167,7 @@
     </header>
 
 
-    <!-- CONTENIDO -->
-
     <section>
-
-
-        <!-- DESCRIPCIÓN -->
 
         <article id="descripcion">
 
@@ -235,7 +188,8 @@
         </article>
 
 
-        <!-- LISTA DE TEMAS CON VÍNCULOS INTERNOS -->
+        <!-- LISTA DE TEMAS DE LA SEMANA 1
+             AHORA CON VÍNCULOS INTERNOS -->
 
         <article>
 
@@ -272,8 +226,6 @@
         </article>
 
 
-        <!-- PERSONAJES -->
-
         <article id="personajes">
 
             <h2>Personajes principales</h2>
@@ -295,8 +247,6 @@
         </article>
 
 
-        <!-- VIAJE -->
-
         <article id="viaje">
 
             <h2>El viaje de Odiseo</h2>
@@ -316,91 +266,59 @@
         </article>
 
 
-        <!-- TABLA -->
+        <!-- TABLA NUEVA DE LA SEMANA 3 -->
 
         <article id="tabla">
 
             <h2>Tabla de personajes de La Odisea</h2>
 
             <p>
-                En esta tabla se presentan algunos de los personajes
-                principales de la obra y su importancia dentro de la historia.
+                En esta tabla aparecen algunos de los personajes principales
+                de la obra.
             </p>
-
 
             <table>
 
                 <tr>
-
                     <th>Personaje</th>
-
                     <th>Quién es</th>
-
-                    <th>Importancia en la historia</th>
-
+                    <th>Importancia</th>
                 </tr>
 
-
                 <tr>
-
                     <td>Odiseo</td>
-
                     <td>Rey de Ítaca</td>
-
-                    <td>Es el protagonista y realiza el viaje de regreso a su hogar.</td>
-
+                    <td>Es el protagonista de la historia.</td>
                 </tr>
 
-
                 <tr>
-
                     <td>Penélope</td>
-
                     <td>Esposa de Odiseo</td>
-
-                    <td>Espera durante años el regreso de su esposo.</td>
-
+                    <td>Espera el regreso de su esposo.</td>
                 </tr>
 
-
                 <tr>
-
                     <td>Telémaco</td>
-
                     <td>Hijo de Odiseo</td>
-
-                    <td>Busca información sobre su padre y ayuda a recuperar su hogar.</td>
-
+                    <td>Busca información sobre su padre.</td>
                 </tr>
 
-
                 <tr>
-
                     <td>Atenea</td>
-
                     <td>Diosa griega</td>
-
-                    <td>Ayuda y protege a Odiseo durante diferentes momentos.</td>
-
+                    <td>Ayuda y protege a Odiseo.</td>
                 </tr>
 
-
                 <tr>
-
                     <td>Poseidón</td>
-
                     <td>Dios del mar</td>
-
-                    <td>Dificulta el regreso de Odiseo a Ítaca.</td>
-
+                    <td>Dificulta el regreso de Odiseo.</td>
                 </tr>
 
             </table>
 
         </article>
 
-
-        <!-- IMAGEN -->
 
         <article>
 
@@ -413,51 +331,39 @@
         </article>
 
 
-        <!-- VÍNCULOS EXTERNOS -->
+        <!-- VÍNCULOS EXTERNOS DE LA SEMANA 3 -->
 
         <article id="enlaces">
 
             <h2>Enlaces externos</h2>
 
             <p>
-                Para conocer más información sobre La Odisea puedes
-                visitar los siguientes sitios:
+                Puedes consultar más información sobre La Odisea
+                en los siguientes enlaces:
             </p>
-
 
             <ul>
 
                 <li>
-
                     <a
                         href="https://es.wikipedia.org/wiki/Odisea"
                         target="_blank">
-
-                        Información sobre La Odisea en Wikipedia
-
+                        La Odisea en Wikipedia
                     </a>
-
                 </li>
 
-
                 <li>
-
                     <a
                         href="https://www.britannica.com/topic/Odyssey-epic-by-Homer"
                         target="_blank">
-
-                        Información sobre La Odisea en Encyclopaedia Britannica
-
+                        La Odisea en Encyclopaedia Britannica
                     </a>
-
                 </li>
 
             </ul>
 
         </article>
 
-
-        <!-- DATO CURIOSO -->
 
         <aside>
 
@@ -471,11 +377,8 @@
 
         </aside>
 
-
     </section>
 
-
-    <!-- PIE DE PÁGINA -->
 
     <footer id="informacion-personal">
 
@@ -493,7 +396,5 @@
 
     </footer>
 
-
 </body>
-
 </html>
