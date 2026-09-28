@@ -1,271 +1,380 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Toda una Odisea</title>
 
     <style>
 
-        /* =========================
-           SELECTORES
-           ========================= */
-
-        /* Selector body: cambia el fondo y el color general del texto */
+        /* Estilo general de la página */
         body {
-            background-color: #eef7fa;
-            color: #243746;
+            background-color: #f4f1de;
+            color: #333333;
             font-family: Arial, sans-serif;
             margin: 0;
         }
 
-        /* Selector header: cambia el fondo y el color del texto */
+        /* Encabezado */
         header {
-            background-color: #164e63;
+            background-color: #264653;
             color: white;
             text-align: center;
-            padding: 35px;
-        }
-
-        /* Selector h1 */
-        h1 {
-            font-size: 45px;
-        }
-
-        /* Selector section */
-        section {
-            background-color: white;
-            margin: 25px;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        /* Selector article */
-        article {
-            background-color: #e5f3f7;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 8px;
-        }
-
-        /* Selector aside */
-        aside {
-            background-color: #fff3d6;
-            color: #59420c;
-            margin: 25px;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        /* Selector footer */
-        footer {
-            background-color: #123447;
-            color: white;
             padding: 30px;
-            text-align: center;
         }
 
+        h1 {
+            font-size: 40px;
+        }
 
-        /* =========================
-           CLASES
-           ========================= */
+        /* Secciones */
+        section {
+            padding: 20px;
+        }
 
-        /* Clase para textos grandes */
+        article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        aside {
+            background-color: #e9c46a;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        /* Clases de semanas anteriores */
         .texto-grande {
-            font-size: 22px;
+            font-size: 20px;
         }
 
-        /* Clase para destacar información */
         .destacado {
-            font-size: 20px;
+            font-size: 22px;
             font-weight: bold;
         }
 
-        /* Clase para los temas */
         .temas {
-            font-size: 19px;
+            font-size: 18px;
         }
 
-
-        /* =========================
-           ID
-           ========================= */
-
-        /* ID para cambiar el tipo de letra */
+        /* IDs */
         #titulo-odisea {
             font-family: Georgia, serif;
         }
 
-        /* ID para cambiar el tipo de letra de la descripción */
         #descripcion {
-            font-family: "Trebuchet MS", sans-serif;
+            font-family: Verdana, sans-serif;
         }
 
-        /* ID para cambiar el tipo de letra del pie de página */
         #informacion-personal {
-            font-family: Georgia, serif;
+            font-family: "Courier New", monospace;
+        }
+
+        /* IMAGEN */
+        img {
+            width: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        /* =========================
+           ESTILOS DE LA TABLA
+           ========================= */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        th {
+            background-color: #264653;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        td {
+            border: 2px solid #264653;
+            padding: 12px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #e9f5f2;
+        }
+
+        tr:hover {
+            background-color: #f1d48a;
+        }
+
+        /* Vínculos */
+        a {
+            color: #1d5d8f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
         }
 
     </style>
 </head>
 
-
 <body>
 
     <!-- ENCABEZADO -->
     <header>
-
         <h1 id="titulo-odisea">Toda una Odisea</h1>
 
-        <p class="texto-grande">
-            Un viaje por la literatura y la mitología griega
+        <p class="destacado">
+            Un recorrido por la historia de Odiseo y su regreso a Ítaca.
         </p>
-
     </header>
 
 
-    <!-- DESCRIPCIÓN -->
+    <!-- CONTENIDO PRINCIPAL -->
     <section>
 
-        <h2>Descripción del sitio web</h2>
+        <!-- DESCRIPCIÓN -->
+        <article id="descripcion">
 
-        <p id="descripcion" class="texto-grande">
-            Bienvenidos a "Toda una Odisea", un sitio web dedicado a conocer
-            la obra La Odisea, atribuida al poeta griego Homero.
-            En este sitio conoceremos su historia, sus personajes,
-            sus aventuras y algunos de los temas más importantes de la obra.
-        </p>
+            <h2>¿Qué es La Odisea?</h2>
 
-        <p>
-            La Odisea cuenta las aventuras de Odiseo durante su largo viaje
-            de regreso a su hogar, Ítaca, después de la guerra de Troya.
-            Durante su recorrido debe enfrentar diferentes obstáculos y
-            personajes de la mitología griega.
-        </p>
-
-    </section>
-
-
-    <!-- INFORMACIÓN SOBRE LA OBRA -->
-    <section>
-
-        <h2>La Odisea</h2>
-
-        <article>
-
-            <h3>¿De qué trata?</h3>
-
-            <p class="destacado">
-                La Odisea es una obra de la literatura griega que narra
-                el viaje de Odiseo para regresar a Ítaca.
+            <p class="texto-grande">
+                La Odisea es una obra atribuida al poeta griego Homero.
+                Cuenta las aventuras de Odiseo durante su largo viaje de regreso
+                a su hogar, Ítaca, después de la guerra de Troya.
             </p>
 
             <p>
-                Durante su viaje enfrenta diferentes aventuras que ponen
-                a prueba su inteligencia, valentía y perseverancia.
+                Durante su viaje, Odiseo enfrenta diferentes obstáculos,
+                criaturas y situaciones que ponen a prueba su inteligencia,
+                valentía y perseverancia.
             </p>
 
         </article>
 
 
+        <!-- LISTA DE TEMAS CON VÍNCULOS INTERNOS -->
         <article>
 
-            <h3>Personajes principales</h3>
+            <h2>Temas de mi página</h2>
 
             <ul class="temas">
 
-                <li>Odiseo</li>
-                <li>Penélope</li>
-                <li>Telémaco</li>
-                <li>Atenea</li>
-                <li>Poseidón</li>
+                <li>
+                    <a href="#personajes">
+                        Personajes principales
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#viaje">
+                        El viaje de Odiseo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#tabla">
+                        Tabla de personajes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#enlaces">
+                        Enlaces externos
+                    </a>
+                </li>
 
             </ul>
 
         </article>
 
+
+        <!-- PERSONAJES -->
+        <article id="personajes">
+
+            <h2>Personajes principales</h2>
+
+            <p>
+                Algunos de los personajes más importantes de La Odisea son:
+            </p>
+
+            <ul>
+                <li>Odiseo</li>
+                <li>Penélope</li>
+                <li>Telémaco</li>
+                <li>Atenea</li>
+                <li>Poseidón</li>
+            </ul>
+
+        </article>
+
+
+        <!-- VIAJE -->
+        <article id="viaje">
+
+            <h2>El viaje de Odiseo</h2>
+
+            <p>
+                El viaje de Odiseo es una de las partes más importantes de la
+                historia. Después de la guerra de Troya, intenta regresar a
+                Ítaca, pero encuentra numerosos obstáculos durante su recorrido.
+            </p>
+
+            <p>
+                En su aventura se encuentra con personajes y lugares
+                fantásticos que hacen que su regreso sea mucho más difícil.
+            </p>
+
+        </article>
+
+
+        <!-- TABLA -->
+        <article id="tabla">
+
+            <h2>Tabla de personajes de La Odisea</h2>
+
+            <p>
+                En la siguiente tabla se presentan algunos personajes
+                importantes de la obra y su función dentro de la historia.
+            </p>
+
+            <table>
+
+                <tr>
+                    <th>Personaje</th>
+                    <th>Quién es</th>
+                    <th>Importancia</th>
+                </tr>
+
+                <tr>
+                    <td>Odiseo</td>
+                    <td>Rey de Ítaca</td>
+                    <td>Protagonista de la historia</td>
+                </tr>
+
+                <tr>
+                    <td>Penélope</td>
+                    <td>Esposa de Odiseo</td>
+                    <td>Espera su regreso a Ítaca</td>
+                </tr>
+
+                <tr>
+                    <td>Telémaco</td>
+                    <td>Hijo de Odiseo</td>
+                    <td>Busca noticias sobre su padre</td>
+                </tr>
+
+                <tr>
+                    <td>Atenea</td>
+                    <td>Diosa griega</td>
+                    <td>Ayuda y protege a Odiseo</td>
+                </tr>
+
+                <tr>
+                    <td>Poseidón</td>
+                    <td>Dios del mar</td>
+                    <td>Dificulta el regreso de Odiseo</td>
+                </tr>
+
+            </table>
+
+        </article>
+
+
+        <!-- IMAGEN -->
+        <article>
+
+            <h2>Representación de La Odisea</h2>
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Ulysses_and_the_Sirens_by_Herbert_James_Draper.jpg/800px-Ulysses_and_the_Sirens_by_Herbert_James_Draper.jpg"
+                alt="Representación de Odiseo y las sirenas">
+
+        </article>
+
+
+        <!-- ENLACES EXTERNOS -->
+        <article id="enlaces">
+
+            <h2>Enlaces externos</h2>
+
+            <p>
+                Puedes conocer más información sobre La Odisea en estos
+                sitios:
+            </p>
+
+            <ul>
+
+                <li>
+                    <a
+                        href="https://es.wikipedia.org/wiki/Odisea"
+                        target="_blank">
+                        Información sobre La Odisea en Wikipedia
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://www.britannica.com/topic/Odyssey-epic-by-Homer"
+                        target="_blank">
+                        Información sobre La Odisea en Encyclopaedia Britannica
+                    </a>
+                </li>
+
+            </ul>
+
+        </article>
+
+
+        <!-- ASIDE -->
+        <aside>
+
+            <h2>Dato curioso</h2>
+
+            <p>
+                La Odisea es una de las obras más importantes de la literatura
+                griega antigua y ha influido en muchas obras literarias
+                posteriores.
+            </p>
+
+        </aside>
+
     </section>
-
-
-    <!-- TEMAS -->
-    <section>
-
-        <h2>Temas y subtemas</h2>
-
-        <p>
-            Estos son algunos de los temas que se pueden encontrar
-            en nuestro sitio web:
-        </p>
-
-        <ol class="temas">
-
-            <li>Historia de La Odisea</li>
-            <li>Personajes principales</li>
-            <li>El viaje de Odiseo</li>
-            <li>Mitología griega</li>
-            <li>Aventuras y obstáculos</li>
-            <li>Importancia de la obra</li>
-
-        </ol>
-
-    </section>
-
-
-    <!-- IMAGEN -->
-    <section>
-
-        <h2>Una representación de La Odisea</h2>
-
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Odyssey_Coins.jpg/640px-Odyssey_Coins.jpg"
-            alt="Representación relacionada con La Odisea"
-            width="400">
-
-        <p class="texto-grande">
-            La historia de Odiseo ha sido representada de diferentes
-            maneras a lo largo de la historia y continúa siendo una
-            obra importante de la literatura universal.
-        </p>
-
-    </section>
-
-
-    <!-- INFORMACIÓN ADICIONAL -->
-    <aside>
-
-        <h2>Dato interesante</h2>
-
-        <p class="destacado">
-            La Odisea es una de las obras más conocidas de la literatura
-            griega antigua y está relacionada con la tradición de los
-            poemas épicos.
-        </p>
-
-    </aside>
 
 
     <!-- PIE DE PÁGINA -->
     <footer id="informacion-personal">
 
-        <h2>Información personal</h2>
+        <h3>Información personal</h3>
 
-        <p><strong>Nombre:</strong> Nicolas Hernandez</p>
-
-        <p><strong>Contacto:</strong> 320998623</p>
-
-        <p><strong>Correo:</strong> hernandezamayanicolas261@gmail.com</p>
-
-        <p><strong>Institución:</strong> Skolmi</p>
-
-        <p><strong>Grado:</strong> 10</p>
-
-        <p>Proyecto de Lengua Castellana - 2026</p>
+        <p>Nombre: Nicolas Hernandez</p>
+        <p>Institución: Skolmi</p>
+        <p>Grado: 11</p>
+        <p>Correo: hernandezamayanicolas261@gmail.com</p>
+        <p>Teléfono: 320998623</p>
 
     </footer>
 
 </body>
-
 </html>
-```
