@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,10 @@
 
     <style>
 
-        /* Estilo general de la página */
+        /* =========================
+           ESTILO GENERAL
+           ========================= */
+
         body {
             background-color: #f4f1de;
             color: #333333;
@@ -16,7 +20,11 @@
             margin: 0;
         }
 
-        /* Encabezado */
+
+        /* =========================
+           ENCABEZADO
+           ========================= */
+
         header {
             background-color: #264653;
             color: white;
@@ -28,7 +36,11 @@
             font-size: 40px;
         }
 
-        /* Secciones */
+
+        /* =========================
+           SECCIONES
+           ========================= */
+
         section {
             padding: 20px;
         }
@@ -40,14 +52,22 @@
             border-radius: 10px;
         }
 
-        aside {
-            background-color: #e9c46a;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
+
+        /* =========================
+           PROPIEDADES DE TEXTO
+           ========================= */
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            word-spacing: 4px;
         }
 
-        /* Clases de semanas anteriores */
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+        }
+
         .texto-grande {
             font-size: 20px;
         }
@@ -55,15 +75,23 @@
         .destacado {
             font-size: 22px;
             font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 3px #000000;
         }
 
         .temas {
             font-size: 18px;
+            line-height: 2;
         }
 
-        /* IDs */
+
+        /* =========================
+           IDS
+           ========================= */
+
         #titulo-odisea {
             font-family: Georgia, serif;
+            letter-spacing: 3px;
         }
 
         #descripcion {
@@ -74,7 +102,11 @@
             font-family: "Courier New", monospace;
         }
 
-        /* IMAGEN */
+
+        /* =========================
+           IMAGEN
+           ========================= */
+
         img {
             width: 300px;
             display: block;
@@ -82,15 +114,15 @@
             border-radius: 10px;
         }
 
+
         /* =========================
-           ESTILOS DE LA TABLA
+           TABLA
            ========================= */
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            background-color: white;
         }
 
         th {
@@ -105,7 +137,7 @@
             border: 2px solid #264653;
             padding: 12px;
             text-align: center;
-            font-size: 16px;
+            line-height: 1.5;
         }
 
         tr:nth-child(even) {
@@ -116,18 +148,38 @@
             background-color: #f1d48a;
         }
 
-        /* Vínculos */
+
+        /* =========================
+           VÍNCULOS
+           ========================= */
+
         a {
             color: #1d5d8f;
-            text-decoration: none;
+            text-decoration: underline;
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline;
+            text-shadow: 1px 1px 2px gray;
         }
 
-        /* Pie de página */
+
+        /* =========================
+           ASIDE
+           ========================= */
+
+        aside {
+            background-color: #e9c46a;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+
+        /* =========================
+           PIE DE PÁGINA
+           ========================= */
+
         footer {
             background-color: #264653;
             color: white;
@@ -139,30 +191,39 @@
     </style>
 </head>
 
+
 <body>
 
     <!-- ENCABEZADO -->
+
     <header>
-        <h1 id="titulo-odisea">Toda una Odisea</h1>
+
+        <h1 id="titulo-odisea">
+            Toda una Odisea
+        </h1>
 
         <p class="destacado">
             Un recorrido por la historia de Odiseo y su regreso a Ítaca.
         </p>
+
     </header>
 
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <!-- CONTENIDO -->
+
     <section>
 
+
         <!-- DESCRIPCIÓN -->
+
         <article id="descripcion">
 
             <h2>¿Qué es La Odisea?</h2>
 
             <p class="texto-grande">
                 La Odisea es una obra atribuida al poeta griego Homero.
-                Cuenta las aventuras de Odiseo durante su largo viaje de regreso
-                a su hogar, Ítaca, después de la guerra de Troya.
+                Cuenta las aventuras de Odiseo durante su largo viaje de
+                regreso a su hogar, Ítaca, después de la guerra de Troya.
             </p>
 
             <p>
@@ -175,6 +236,7 @@
 
 
         <!-- LISTA DE TEMAS CON VÍNCULOS INTERNOS -->
+
         <article>
 
             <h2>Temas de mi página</h2>
@@ -211,6 +273,7 @@
 
 
         <!-- PERSONAJES -->
+
         <article id="personajes">
 
             <h2>Personajes principales</h2>
@@ -220,81 +283,116 @@
             </p>
 
             <ul>
+
                 <li>Odiseo</li>
                 <li>Penélope</li>
                 <li>Telémaco</li>
                 <li>Atenea</li>
                 <li>Poseidón</li>
+
             </ul>
 
         </article>
 
 
         <!-- VIAJE -->
+
         <article id="viaje">
 
             <h2>El viaje de Odiseo</h2>
 
             <p>
-                El viaje de Odiseo es una de las partes más importantes de la
-                historia. Después de la guerra de Troya, intenta regresar a
-                Ítaca, pero encuentra numerosos obstáculos durante su recorrido.
+                Después de la guerra de Troya, Odiseo intenta regresar
+                a Ítaca. Sin embargo, durante su viaje encuentra numerosos
+                obstáculos que hacen que su regreso sea mucho más difícil.
             </p>
 
             <p>
-                En su aventura se encuentra con personajes y lugares
-                fantásticos que hacen que su regreso sea mucho más difícil.
+                En su aventura se encuentra con criaturas, dioses y
+                diferentes pueblos que ponen a prueba su inteligencia
+                y perseverancia.
             </p>
 
         </article>
 
 
         <!-- TABLA -->
+
         <article id="tabla">
 
             <h2>Tabla de personajes de La Odisea</h2>
 
             <p>
-                En la siguiente tabla se presentan algunos personajes
-                importantes de la obra y su función dentro de la historia.
+                En esta tabla se presentan algunos de los personajes
+                principales de la obra y su importancia dentro de la historia.
             </p>
+
 
             <table>
 
                 <tr>
+
                     <th>Personaje</th>
+
                     <th>Quién es</th>
-                    <th>Importancia</th>
+
+                    <th>Importancia en la historia</th>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Odiseo</td>
+
                     <td>Rey de Ítaca</td>
-                    <td>Protagonista de la historia</td>
+
+                    <td>Es el protagonista y realiza el viaje de regreso a su hogar.</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Penélope</td>
+
                     <td>Esposa de Odiseo</td>
-                    <td>Espera su regreso a Ítaca</td>
+
+                    <td>Espera durante años el regreso de su esposo.</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Telémaco</td>
+
                     <td>Hijo de Odiseo</td>
-                    <td>Busca noticias sobre su padre</td>
+
+                    <td>Busca información sobre su padre y ayuda a recuperar su hogar.</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Atenea</td>
+
                     <td>Diosa griega</td>
-                    <td>Ayuda y protege a Odiseo</td>
+
+                    <td>Ayuda y protege a Odiseo durante diferentes momentos.</td>
+
                 </tr>
 
+
                 <tr>
+
                     <td>Poseidón</td>
+
                     <td>Dios del mar</td>
-                    <td>Dificulta el regreso de Odiseo</td>
+
+                    <td>Dificulta el regreso de Odiseo a Ítaca.</td>
+
                 </tr>
 
             </table>
@@ -303,6 +401,7 @@
 
 
         <!-- IMAGEN -->
+
         <article>
 
             <h2>Representación de La Odisea</h2>
@@ -314,32 +413,43 @@
         </article>
 
 
-        <!-- ENLACES EXTERNOS -->
+        <!-- VÍNCULOS EXTERNOS -->
+
         <article id="enlaces">
 
             <h2>Enlaces externos</h2>
 
             <p>
-                Puedes conocer más información sobre La Odisea en estos
-                sitios:
+                Para conocer más información sobre La Odisea puedes
+                visitar los siguientes sitios:
             </p>
+
 
             <ul>
 
                 <li>
+
                     <a
                         href="https://es.wikipedia.org/wiki/Odisea"
                         target="_blank">
+
                         Información sobre La Odisea en Wikipedia
+
                     </a>
+
                 </li>
 
+
                 <li>
+
                     <a
                         href="https://www.britannica.com/topic/Odyssey-epic-by-Homer"
                         target="_blank">
+
                         Información sobre La Odisea en Encyclopaedia Britannica
+
                     </a>
+
                 </li>
 
             </ul>
@@ -347,34 +457,43 @@
         </article>
 
 
-        <!-- ASIDE -->
+        <!-- DATO CURIOSO -->
+
         <aside>
 
             <h2>Dato curioso</h2>
 
             <p>
-                La Odisea es una de las obras más importantes de la literatura
-                griega antigua y ha influido en muchas obras literarias
-                posteriores.
+                La Odisea es una de las obras más importantes de la
+                literatura griega antigua y ha influido en muchas obras
+                literarias posteriores.
             </p>
 
         </aside>
+
 
     </section>
 
 
     <!-- PIE DE PÁGINA -->
+
     <footer id="informacion-personal">
 
         <h3>Información personal</h3>
 
         <p>Nombre: Nicolas Hernandez</p>
+
         <p>Institución: Skolmi</p>
+
         <p>Grado: 11</p>
+
         <p>Correo: hernandezamayanicolas261@gmail.com</p>
+
         <p>Teléfono: 320998623</p>
 
     </footer>
 
+
 </body>
+
 </html>
