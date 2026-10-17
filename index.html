@@ -156,11 +156,118 @@
             background-color: #eef7fa;
         }
 
+
+        /* =========================
+           SEMANA 4
+           MENÚ DE NAVEGACIÓN
+           ========================= */
+
+        nav {
+            background: #123447;
+            width: 100%;
+            min-height: 50px;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 17px 20px;
+            text-decoration: none;
+        }
+
+
+        /* =========================
+           SEMANA 4
+           COMBINACIÓN DE SELECTORES
+           ========================= */
+
+        p.texto-grande {
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        p.destacado {
+            font-weight: bold;
+            text-shadow: 2px 2px 3px #777777;
+        }
+
+
+        /* =========================
+           SEMANA 4
+           AGRUPACIÓN DE SELECTORES
+           ========================= */
+
+        #descripcion,
+        #historia,
+        #viaje {
+            line-height: 1.8;
+            word-spacing: 3px;
+        }
+
+
+        /* =========================
+           SEMANA 4
+           SELECTORES DESCENDIENTES
+           ========================= */
+
+        section ul li {
+            color: #243746;
+            padding: 5px;
+        }
+
+        section ol li {
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           SEMANA 4
+           PSEUDOCLASE HOVER
+           ========================= */
+
+        nav ul li a:hover {
+            background-color: #e5f3f7;
+            color: #164e63;
+        }
+
+        a:hover {
+            color: #b45309;
+            text-decoration: underline;
+        }
+
+        article:hover {
+            background-color: #d5eaf0;
+        }
+
     </style>
 </head>
 
 
 <body>
+
+    <!-- MENÚ DE NAVEGACIÓN: SEMANA 4 -->
+    <nav>
+        <ul>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#viaje">El viaje</a></li>
+            <li><a href="#tabla">Tabla</a></li>
+            <li><a href="#enlaces">Enlaces externos</a></li>
+        </ul>
+    </nav>
+
 
     <!-- ENCABEZADO -->
     <header>
@@ -358,7 +465,7 @@
 
 
     <!-- TABLA DE LA SEMANA 3 -->
-    <section>
+    <section id="tabla">
 
         <h2>Tabla de personajes de La Odisea</h2>
 
@@ -451,7 +558,7 @@
 
 
     <!-- VÍNCULOS EXTERNOS -->
-    <section>
+    <section id="enlaces">
 
         <h2>Enlaces externos</h2>
 
